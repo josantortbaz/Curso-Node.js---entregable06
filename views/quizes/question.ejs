@@ -1,5 +1,5 @@
 <form method="get" action="/quizes/answer">
 	Pregunta: <%= pregunta %> <p>
-	<input type="text" name="respuesta" value="Responda aquí"/>
+	<input type="text" name="respuesta" value="Responda aquí"  onfocus="if (this.value=='Responda aquí') this.value='';" onblur="if (this.value=='') this.value='Responda aquí';" />
 	<input type="submit" value="Enviar">
 </form>
